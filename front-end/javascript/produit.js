@@ -30,7 +30,7 @@ fetch("http://localhost:3000/api/cameras/"+searchParamsId) //Lien vers l'API
 
 
         //Boucle permettant d'afficher le nom des lentilles liée à une caméra
-        for (i=0; i<data.lenses.lenght; i++) {
+        for (i=0; i<data.lenses.length; i++) {
             //Création de la balise option
             let lense = document.createElement('option');
             lense.value='lenses'+[i];
