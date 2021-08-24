@@ -1,0 +1,22 @@
+@import "./_variables/";
+
+footer {
+    width: 100%;
+    color: $primary;
+    background-color: $secondary;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    a {
+    text-decoration: none;
+    color: $primary;
+    margin-bottom: 3px;
+    &:hover {
+        color: $tertiary;
+        }
+    }
+}
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}

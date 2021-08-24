@@ -1,0 +1,79 @@
+@import "./_variables";
+
+body {
+    background-color: $primary;
+    margin: 0;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    a {
+        text-decoration: none;
+        color: $primary;
+        :hover {
+            color: $tertiary;
+        }
+    }
+}
+#camera {
+    background-color: $primary;
+}
+h2 {
+    border: 1px dotted $tertiary;
+    text-align: center;
+    color: $secondary;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+.col-sm {
+    border: 1px dotted $tertiary;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 25%;
+    border-radius: 20px 20px 0 0;
+    background-color: $primary;
+    color: $secondary;
+    //border: 1px solid $primary;
+    margin: 0 2px;
+    img {
+        width: 100%;
+        height: 218px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    p, h3 {
+        color: $secondary;
+        text-align: center;
+    }
+}
+.col-md {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        margin: 0 5%;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    p, h3 {
+        padding-top: 5px;
+        text-align: center;
+    }
+}
+.col-md-ct {
+    display: flex;
+    justify-content: center;
+
+}
+.produit {
+    background-color: $primary;
+}

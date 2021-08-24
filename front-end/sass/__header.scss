@@ -1,0 +1,28 @@
+@import "./_variables/";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: $primary; // en noir
+    background-color: $secondary; // en jaune
+
+    p {
+    padding-top: 15px;
+    padding-left: 18px;
+    }
+
+    h1 {
+        padding-left: 18px;
+    }
+
+    a {
+    color: $primary; // en noir
+    text-decoration: none;
+    padding: 15px 18px 0 18px;
+    &:hover {
+        color: $tertiary;
+        }
+    }
+}

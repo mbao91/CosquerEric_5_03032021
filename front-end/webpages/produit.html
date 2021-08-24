@@ -10,17 +10,41 @@
     <!--Appel de fontawesome-->
     <script src="https://kit.fontawesome.com/4389809c4d.js" crossorigin="anonymous"></script>
     <!-- Lien vers le fichier javascript product.js-->
-    <script src="../javascript/product.js" defer></script>
+    <script src="../javascript/produit.js" defer></script>
     <title>Produits</title>
 </head>
 <body>
     <header class="header">
-
+        <a href="../index.html">
+            Accueil
+        </a>
+        <h1>Orinoco</h1>
+        <a href="../front-end/webpages/panier.html">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
     </header>
 
     <!-- Section permettant de définir l'endroit où sera écrit le code HTML depuis le fichier product.js -->
     <section id="camera" class="produit">
-        
+        <div id="divProduit" class="col-md">
+            <img id="imageProduct" src="" alt="">
+            <h3 id="nameProduct"></h3>
+            <p id="descriptionProduct"></p>
+            <p id="priceProduct"></p>
+            <div class="col-md-ct">
+                <select name="lense" id="lensesCameras"></select>
+                <input type="number" id="quantite" min="0" max="10" value="1">
+                <button id="ajoutPanier" class="btn btn-primary"></button>
+            </div>
+        </div>
     </section>
+
+    <footer id="footer">
+        <div class="footer_column">
+            <h4>Assistance</h4>
+            <a href="#">Centre d'aide</a>
+            <a href="#">Nous contacter</a>
+        </div>
+    </footer>
 </body>
 </html>
