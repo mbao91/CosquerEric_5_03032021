@@ -21,6 +21,7 @@ fetch("http://localhost:3000/api/cameras/"+searchParamsId) //Lien vers l'API
             lensesCameras = document.querySelector('#lensesCameras'),
             ajoutPanier = document.querySelector('#ajoutPanier');
 
+
         //Attribution des données pour chaque éléments
         img.src = data.imageUrl;
         img.alt = data.name;
@@ -43,6 +44,7 @@ fetch("http://localhost:3000/api/cameras/"+searchParamsId) //Lien vers l'API
         ajoutPanier.appendChild(txtButton);
         ajoutPanier.onclick = function() {
             addLocalstorage(data);
+            window.location = "../webpages/panier.html";
         }; 
     });
 
@@ -88,3 +90,8 @@ fetch("http://localhost:3000/api/cameras/"+searchParamsId) //Lien vers l'API
             alert("L'objet à été ajouté au panier");
         }
     }
+
+    //créer un bouton ajouter au panier qui va en meme temps rediriger vers la page panier  DONE
+    // créer panier.html et panier.js qui vont afficher les articles du local storage ainsi qu'un bouton de validation de commande qui va rediriger vers commande.html
+    //créer commande.html et commande.js qui vont afficher la commande passé et son id
+    //finir le plan de test

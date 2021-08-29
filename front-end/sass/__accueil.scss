@@ -18,14 +18,19 @@ body {
         }
     }
 }
-#camera {
+.cameras {
     background-color: $primary;
+    display: flex;
+    flex-flow: row wrap;
+
 }
+
 h2 {
+    background-color: $primary;
     border: 1px dotted $tertiary;
     text-align: center;
     color: $secondary;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     padding-bottom: 2px;
 }
 .col-sm {
@@ -33,15 +38,15 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 25%;
+    min-width: 30%;
+    min-height: 435px;
     border-radius: 20px 20px 0 0;
     background-color: $primary;
     color: $secondary;
-    //border: 1px solid $primary;
     margin: 0 2px;
     img {
         width: 100%;
-        height: 218px;
+        height: 65%;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
     }
@@ -72,8 +77,87 @@ h2 {
 .col-md-ct {
     display: flex;
     justify-content: center;
-
+    :nth-child(1) :nth-child(2) :nth-child(3) {
+        margin: 5px;
+    }
 }
+
 .produit {
     background-color: $primary;
+}
+
+.d-flex{
+    flex-wrap: wrap;
+  }
+  
+  .p-2{
+    background-color: $primary;
+    margin: 4px !important;
+    border: $secondary 2px solid;
+    color: $secondary;
+    border-radius: 6px;
+    width: 15%;
+    padding: 0 !important;
+    p{
+      button{
+        margin-right: 2px;
+        margin-left: 2px;
+      }
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius:0 0 10px 10px ;
+    }
+  }
+
+  .panierBG {
+      background-color: $primary;
+      color: $secondary;
+  }
+  
+.objCommande{
+    display: flex;
+    flex-direction: column;
+    border: none !important;
+  }
+  
+.formulaire{
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    form{
+      flex: none !important;
+      justify-content: center;
+      p{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+      }
+      button{
+        width: 65% !important;
+        margin-bottom: 4px;
+      }
+    }
+    .col-md-6{
+      flex: none !important;
+      width: 35%;
+      margin-left: 4px;
+    }
+  }
+
+  //.text-center {
+  
+@media screen and (max-width: 1000px) {
+    .col-sm {
+        display: flex;
+        min-width: 33%;
+    }
+    .cameras {
+        :nth-child(5){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }

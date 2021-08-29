@@ -15,25 +15,55 @@
 </head>
 <body>
     <header class="header">
-
+        <a href="../index.html">
+            Accueil
+        </a>
+        <h1 class="title_pa">Orinoco</h1>
     </header>
 
     <!--Section permettant de définir l'endroit où sera écrit le code HTML depuis le fichier panier.js-->
-    <section>
-
+    <section class="panierBG">
+        <h2>Panier</h2>
+        <p id="panierVide"></p>
+        <div id="divRow" class="d-flex"></div>
     </section>
 
     <!--Déclaration du formulaire-->
-    <section class="formulaire">
-
+    <section class="formulaire panierBG">
+        <h2>Formulaire de commande</h2>
+        <form id="formCommande" class="row">
+        <div class="col-md-6">
+          <label for='lastName' class="form-label">Nom</label>
+          <input type='text' id='lastName' class="form-control" pattern="[a-zA-Z]{2,30}" required>
+        </div>
+        <div class="col-md-6">
+          <label for='firstName' class="form-label">Prenom</label>
+          <input type='text' id='firstName' class="form-control" pattern="[a-zA-Z]{2,30}" required>
+        </div>
+        <div class="col-md-6">
+          <label for='adress' class="form-label">Adresse</label>
+          <input type='text' id='adress' class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for='city' class="form-label">Ville</label>
+          <input type='text' id='city' class="form-control" pattern="[a-zA-Z]{2,30}" required>
+        </div>
+        <div class="col-md-6">
+          <label for='email' class="form-label">Email</label>
+          <input type='email' id='email' class="form-control" required>
+        </div>
+        <button id="confirmCommande" class="btn btn-primary">Confirmer la commande</button>
+      </form>
     </section>
 
 
-    <div></div>
+    <div class="orderId"></div>
 
     <footer id="footer">
         <div class="footer_column">
-
+            <h4>Assistance</h4>
+            <a href="#">Centre d'aide</a>
+            <a href="#">Nous contacter</a>
         </div>
     </footer>
 </body>

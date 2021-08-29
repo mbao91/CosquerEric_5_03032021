@@ -6,7 +6,7 @@ fetch("http://localhost:3000/api/cameras/")
         //Boucle parcourant les  entrées du tableau
         for (let i=0; i<data.length; i++) {
             //Défini la ou le code html sera crée
-            let camera = document.querySelector('#camera'),
+            let camera = document.querySelector('.cameras'),
             //Création des différents élements
             div = document.createElement('div'),
             img = document.createElement('img'),

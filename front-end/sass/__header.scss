@@ -8,15 +8,24 @@
     color: $primary; // en noir
     background-color: $secondary; // en jaune
 
-    p {
-    padding-top: 15px;
-    padding-left: 18px;
-    }
-
-    h1 {
+    .title_in {
         padding-left: 18px;
     }
 
+    .title_pr{
+        padding-right: 30px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .title_pa, .title_co {
+        padding-right: 18px;
+    }
+
+    .title_co {
+        padding-top: 5px;
+    }
+    
     a {
     color: $primary; // en noir
     text-decoration: none;
@@ -26,3 +35,4 @@
         }
     }
 }
+
