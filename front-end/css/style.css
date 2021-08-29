@@ -25,15 +25,22 @@ body {
   color: #e8e5e5;
 }
 
-#camera {
+.cameras {
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 h2 {
+  background-color: black;
   border: 1px dotted #e8e5e5;
   text-align: center;
   color: #ffc107;
-  margin-bottom: 0;
   padding-bottom: 2px;
 }
 
@@ -48,7 +55,8 @@ h2 {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 25%;
+  min-width: 30%;
+  min-height: 435px;
   border-radius: 20px 20px 0 0;
   background-color: black;
   color: #ffc107;
@@ -57,7 +65,7 @@ h2 {
 
 .col-sm img {
   width: 100%;
-  height: 218px;
+  height: 65%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -107,8 +115,120 @@ h2 {
           justify-content: center;
 }
 
+.col-md-ct :nth-child(1) :nth-child(2) :nth-child(3) {
+  margin: 5px;
+}
+
 .produit {
   background-color: black;
+}
+
+.d-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-2 {
+  background-color: black;
+  margin: 4px !important;
+  border: #ffc107 2px solid;
+  color: #ffc107;
+  border-radius: 6px;
+  width: 15%;
+  padding: 0 !important;
+}
+
+.p-2 p button {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.p-2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+.panierBG {
+  background-color: black;
+  color: #ffc107;
+}
+
+.objCommande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none !important;
+}
+
+.formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formulaire form {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+
+.formulaire form button {
+  width: 65% !important;
+  margin-bottom: 4px;
+}
+
+.formulaire .col-md-6 {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 35%;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .col-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 33%;
+  }
+  .cameras :nth-child(5) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header {
@@ -127,13 +247,22 @@ h2 {
   background-color: #ffc107;
 }
 
-.header p {
-  padding-top: 15px;
+.header .title_in {
   padding-left: 18px;
 }
 
-.header h1 {
-  padding-left: 18px;
+.header .title_pr {
+  padding-right: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.header .title_pa, .header .title_co {
+  padding-right: 18px;
+}
+
+.header .title_co {
+  padding-top: 5px;
 }
 
 .header a {
@@ -147,17 +276,21 @@ h2 {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   color: black;
   background-color: #ffc107;
-  padding-top: 15px;
-  padding-left: 18px;
-  padding-bottom: 15px;
 }
 
 footer a {
   text-decoration: none;
   color: black;
+  margin-left: 2px;
   margin-bottom: 3px;
 }
 
@@ -173,5 +306,9 @@ footer a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer_column :nth-child(2) {
+  padding-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
