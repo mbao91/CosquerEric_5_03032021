@@ -27,7 +27,7 @@ fetch("http://localhost:3000/api/cameras/")
 
       //On attribu les données à chaque élement
       img.src = data[i].imageUrl;
-      lien.href = "../front-end/webpages/produit.html?id=" + data[i]._id;
+      lien.href = "front-end/webpages/produit.html?id=" + data[i]._id;
       price.innerText = (data[i].price / 100).toLocaleString("fr") + " €";
       name.innerText = data[i].name;
       description.innerText = data[i].description;

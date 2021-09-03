@@ -143,7 +143,12 @@ h2 {
     }
   }
 
-  //.text-center {
+@media screen and (max-width: 1051px) {
+  .col-fr {
+    display: flex;
+    min-width: 33%;
+}
+}
   
 @media screen and (max-width: 1000px) {
     .col-fr {
