@@ -36,7 +36,7 @@ if (objPanier.length===0) {
         //Ajout de classes CSS
         divCol.className = "p-2";
         //Création du bouton permettant de modifier la quantité d'un objet (-1)
-        let articleLess = document.createElement('button');
+        /*let articleLess = document.createElement('button');
         let txtBtnLess = document.createTextNode('-');
         articleLess.className = "btn btn-primary";
         articleLess.appendChild(txtBtnLess);
@@ -66,7 +66,7 @@ if (objPanier.length===0) {
             let objActu = objPanier[i];
             //Appel de la fonction articlePlus
             articlePlus(objActu);
-        };
+        };*/
             
         //Création du bouton permettant de supprimer un objet
         let basketDel = document.createElement('button');
@@ -161,7 +161,7 @@ if (objPanier.length===0) {
 }
 
 //Fonction qui retire 1 au nombre d'objet
-function articleMoins (objActu){
+/*function articleMoins (objActu){
     objPanier.forEach((article) => {
         //Si le nom et la couleur de l'article corespond à l'objet créer alors
         if (article.name === objActu.name&& article.camera === objActu.camera) {
@@ -189,7 +189,7 @@ function articlePlus (objActu){
     localStorage.setItem('panier', JSON.stringify(objPanier));
     //Actualistation de la page
     history.go(0);
-}
+}*/
 
 //Fonction de supression d'article
 function articleSuppr (objActu) {
