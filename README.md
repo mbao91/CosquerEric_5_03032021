@@ -1,6 +1,6 @@
 # CosquerEric_5_03032021
 
-Scénario
+SCENARIO
 
 Félicitations ! Vous avez été recruté en tant que développeur front-end par Orinoco, une entreprise de commerce en ligne. 
 Son credo ? Se démarquer des grands site e-commerce comme Amazon en créant des applications thématiques ne vendant qu’un seul groupe de produits. 
@@ -44,7 +44,7 @@ Moi > Ok ! C’est parti alors !
 
 Vous gardez en tête toutes ces informations et attaquez le développement immédiatement.
 
-Livrables
+LIVRABLES
 
   Le lien vers un dépôt Git public contenant le code de l'application web.
 Le mentor et l'évaluateur doivent être en mesure de cloner le référentiel, d'ouvrir index.html, d'utiliser l'application entièrement opérationnelle et de 
